@@ -93,11 +93,11 @@ Vue.component('cuadradocolor', {
             backgroundColor: `rgb(${this.color.r},${this.color.g},${this.color.b})`
         };
     },
-    props: ['color','index'],
+    props: ['color','index','conocerGanador'],
     methods: {
         mostrarColor(){
             colorclickeado= this.color;
-            this.$parent.conocerGanador(colorclickeado, this.index);
+            this.conocerGanador(colorclickeado, this.index);
         },
     },
     template: `
